@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>$cv-name$</title>
+  $for(css)$<link rel="stylesheet" href="$css$">$endfor$
+</head>
+<body>
+  <div class="sidebar-background" aria-hidden="true"></div>
+  <aside class="sidebar">$cv-sidebar$<div id="cv-sidebar-end"></div></aside>
+  <main>
+    <header class="identity">
+      <h1>$cv-name$</h1>
+      $if(cv-headline)$<div class="headline">$cv-headline$</div>$endif$
+      $if(cv-location)$<div class="location">$cv-location$</div>$endif$
+    </header>
+    $body$
+  </main>
+</body>
+</html>

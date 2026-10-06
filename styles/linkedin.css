@@ -1,0 +1,77 @@
+@page {
+  size: Letter;
+  margin: 21.6pt 21.6pt 36pt 223.56pt;
+  @bottom-center {
+    content: "Page " counter(page) " of " counter(pages);
+    font-family: "Arial Unicode MS", Arial, sans-serif;
+    font-size: 9pt;
+    color: #000;
+  }
+}
+@page:first { margin-top: 43.2pt; }
+html {
+  font-family: "Arial Unicode MS", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 18pt;
+  color: #191919;
+}
+body { margin: 0; }
+.sidebar-background {
+  position: fixed;
+  left: -223.56pt;
+  top: -100pt;
+  bottom: -100pt;
+  width: 201.96pt;
+  background: #293e49;
+  z-index: -1;
+}
+.sidebar {
+  position: absolute;
+  left: -201.96pt;
+  top: 0;
+  width: 158.76pt;
+  color: #fff;
+  line-height: 12.6pt;
+}
+.sidebar section { margin-bottom: 20pt; }
+.sidebar h2 { font-size: 13pt; color: #e1e9ee; margin: 0 0 8pt; line-height: 16pt; }
+.sidebar p { margin: 0 0 12pt; }
+.sidebar ul { list-style: none; padding: 0; margin: 0; }
+.sidebar li { margin: 0 0 5pt; }
+.sidebar li p { margin: 0; }
+.sidebar em { font-style: normal; color: #a9b1b6; }
+#cv-sidebar-end { height: 0; margin: 0; padding: 0; }
+h1, h2, h3, h4 { font-weight: normal; break-after: avoid; }
+h1 { font-size: 26pt; line-height: 31.2pt; margin: -5pt 0 0; }
+.identity { margin-bottom: 23pt; break-inside: avoid; }
+.headline, .identity .location { font-size: 12pt; line-height: 15.6pt; }
+.location { color: #b1b1b1; }
+main > section { margin: 0 0 22pt; }
+main > section + section::before {
+  content: "";
+  display: block;
+  width: 36.7pt;
+  border-top: 1pt solid #999;
+  margin-bottom: 9pt;
+}
+h2 { font-size: 15.75pt; line-height: 20pt; margin: 0 0 13pt; }
+h3 { font-size: 12pt; line-height: 18pt; margin: 0; }
+h4 { font-size: 11.5pt; line-height: 15.6pt; margin: 0; }
+p { margin: 0 0 12pt; }
+.summary { font-size: 12pt; line-height: 18pt; }
+.summary h2 { margin-bottom: 8pt; }
+.entry { margin-bottom: 16pt; }
+.role { margin-top: 8pt; }
+.entry-header, .role-header { break-inside: avoid; break-after: avoid; }
+.field { line-height: 14.4pt; }
+.field p { margin: 0; }
+.role-header { margin-bottom: 6pt; }
+main ul { list-style: none; margin: 0; padding: 0; }
+main ul > li::before { content: "• "; }
+main ul > li { margin: 0 0 18pt; }
+main li > p:first-child { display: inline; }
+main li > p { margin-bottom: 0; }
+main ul ul { padding-left: 12pt; }
+p, li { orphans: 2; widows: 2; }
+a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
+strong { font-weight: bold; }

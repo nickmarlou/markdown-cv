@@ -1,0 +1,9 @@
+[project]
+name = "markdown-cv"
+version = "0.1.0"
+description = "Generate professional, two-column CV PDFs from Markdown"
+requires-python = ">=3.11"
+dependencies = ["weasyprint==70.0"]
+
+[dependency-groups]
+dev = ["pymupdf>=1.26,<2", "pytest>=8,<10"]
